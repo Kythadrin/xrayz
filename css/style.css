@@ -1,5 +1,9 @@
+body{
+    background-color: lightcyan;
+}
+
 .navbar-default{
-    background: #328A81;
+    background: #521A89;
 }
 
 /*Цвет названия сайта*/
@@ -30,5 +34,26 @@ navbar-default .navbar-nav > li > a:focus{
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #d1ffed;
-    background-color: #66B7A3;
+    background-color: #7448A0;
+}
+
+
+.page-footer{
+    background-color: #521A89;
+    color: white;
+
+}
+
+.page-footer .row{
+    background-color: #7448A0;
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+.page-footer .list-unstyled > li > a{
+    color: white;
+}
+
+.footer-copyright > a{
+    color: white;
 }
