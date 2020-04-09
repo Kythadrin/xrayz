@@ -4,6 +4,7 @@ body{
 
 .navbar-default{
     background: #521A89;
+    margin-top: -1px;
 }
 
 /*Цвет названия сайта*/
@@ -37,23 +38,25 @@ navbar-default .navbar-nav > li > a:focus{
     background-color: #7448A0;
 }
 
-
+/*Цвет текста и фона нижнего блока footer*/
 .page-footer{
     background-color: #521A89;
     color: white;
-
 }
 
+/*Цвеи верхнего блка footer*/
 .page-footer .row{
     background-color: #7448A0;
     margin-right: -30px;
     margin-left: -30px;
 }
 
+/*Цвет ссылко верхнего блока footer*/
 .page-footer .list-unstyled > li > a{
     color: white;
 }
 
+/*Цвет ссылко нижнего блока footer*/
 .footer-copyright > a{
     color: white;
 }
