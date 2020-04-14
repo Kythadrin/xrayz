@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 
-nav{
-    display: block;
-}
-
 body{
     background-color: white;
     font-family: 'Comic Neue', cursive;
@@ -16,6 +12,7 @@ body{
 .header-text{
     margin-top: -3.5%;
 }
+
 .banner-text{
     font-family: 'Chiller', sans-serif;
     font-size: 96px;
@@ -48,10 +45,11 @@ body{
 }
 
 .logo:hover, .logo:focus{
-    transition: 0.8s;
+    transition: all 0.8s;
     filter: hue-rotate(90deg);
     transform: scale(1.1);
 }
+
 
 .navbar-default{
     background: #521A89;
@@ -60,7 +58,11 @@ body{
 }
 
 .navbar-default .navbar-nav > li{
-    margin-top: 10%;
+    margin-top: 5%;
+}
+
+.navbar-default .container-fluid > h2{
+    margin-left: 350px;
 }
 
 /*Элемент меню, при поднесении к нему курсора мышки или при его нахождении в фокусе*/
@@ -89,29 +91,22 @@ body{
     font-size: 48px;
     color: white;
 }
+
 .content{
     margin-top: 300px;
 }
 
-.content .row{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.content .product{
+    margin-top: 100px;
 }
 
-.content .card-body{
-    margin: 20px;
-}
 
-.content .row{
-    margin-left: 100px;
-}
-
-.card-body > img{
+.product > img{
     border: #9c9eaf 1px solid;
     border-radius: 20px;
     padding: 50px;
 }
+
 .product-button{
     margin-top: 20px;
     width: 200px;
@@ -129,7 +124,7 @@ body{
     transition: 0.8s;
 }
 
-.card-body > a{
+.product > a{
     text-decoration: none;
     color: black;
 }
@@ -153,11 +148,9 @@ body{
     background-color: #7448A0;
 }
 
-/*Цвет ссылко верхнего блока footer*/
-.page-footer .list-unstyled > li > a{
+.page-footer .container-fluid .row .col-md-3 > a{
     color: white;
 }
-
 /*Цвет ссылко нижнего блока footer*/
 .footer-copyright > a{
     color: white;
