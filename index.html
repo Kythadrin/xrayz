@@ -12,65 +12,82 @@
     <title>Document</title>
 </head>
 <body>
-<nav class="navbar navbar-default container">
+<nav class="navbar navbar-default fixed-top">
     <div class="container-fluid">
+
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Name</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="" href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
         </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">text 1</a></li>
-            <li><a href="#">text 2</a></li>
-        </ul>
-        <form class="navbar-form navbar-right" action="/action_page.php">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">text 1</a></li>
+                <li><a href="#">text 2</a></li>
+            </ul>
+        </div>
+        <h2 class="text-center header-text">Welcome to our store!</h2>
     </div>
 </nav>
-<div style="height: 728px;"> </div>
-<footer class="page-footer font-small pt-4 container">
+<div class="container-fluid banner centered">
+    <form class="navbar-form" action="/action_page.php">
+        <div class="banner-text">
+            Search & Buy
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" size="96px" placeholder="Search">
+        </div>
+    </form
+</div>
+<div class="container-fluid content">
+    <div class="category">
+        <h1>Sneakers</h1>
+    </div>
+    <div class="row">
+        <div class="card-body">
+            <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
+            300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
+            <a href="#"><div class="product-button"><h4 class="card-title">Title</h4></div></a>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer font-small pt-4">
     <div class="container-fluid text-center text-md-left">
         <div class="row">
             <div class="col-md-6 mt-md-0 mt-3">
-                <h5 class="text-uppercase">Footer Content</h5>
-                <p>TextTextTextTextTextTextTextTextTextTextText</p>
+                <h5 class="text-uppercase">About us</h5>
+                <p></p>
+                <img src="img/paypal.png" alt="paypal" class="payment-img">
+                <img src="img/visa.png" alt="visa" class="payment-img">
+                <img src="img/mastercard.png" alt="mastercard" class="payment-img">
             </div>
             <div class="col-md-3 mb-md-0 mb-3">
-                <h5 class="text-uppercase">Links</h5>
+                <h5 class="text-uppercase">Products</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="#">Link 1</a>
                     </li>
                     <li>
-                        <a href="#!">Link 2</a>
+                        <a href="#">Link 2</a>
                     </li>
                     <li>
-                        <a href="#!">Link 3</a>
+                        <a href="#">Link 3</a>
                     </li>
                     <li>
-                        <a href="#!">Link 4</a>
+                        <a href="#">Link 4</a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-3 mb-md-0 mb-3">
-                <h5 class="text-uppercase">Links</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 3</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 4</a>
-                    </li>
-                </ul>
+                <h5 class="text-uppercase">Social media</h5>
+                <a href="#"><img src="img/telegram.png" class="social-img"></a>
+                <a href="#"><img src="img/instagram.png" class="social-img"></a>
             </div>
         </div>
     </div>

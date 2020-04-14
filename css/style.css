@@ -1,43 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+nav{
+    display: block;
+}
+
 body{
-    background-color: lightcyan;
+    background-color: white;
+    font-family: 'Comic Neue', cursive;
+}
+
+.centered{
+    text-align: center;
+}
+
+.header-text{
+    margin-top: -3.5%;
+}
+.banner-text{
+    font-family: 'Chiller', sans-serif;
+    font-size: 96px;
+    color: white;
+    background-color: black;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.banner .navbar-form{
+    margin-top: 10%;
+}
+
+.banner{
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -250px;
+    height: 660px;
+    opacity: 0.9;
+    margin-top: -20px;
+}
+
+.logo{
+    width: 80px;
+}
+
+.logo:hover, .logo:focus{
+    transition: 0.8s;
+    filter: hue-rotate(90deg);
+    transform: scale(1.1);
 }
 
 .navbar-default{
     background: #521A89;
-    margin-top: -1px;
+    border: 0;
+    border-radius: 0;
 }
 
-/*Цвет названия сайта*/
-.navbar-default .navbar-brand{
-    color: white;
+.navbar-default .navbar-nav > li{
+    margin-top: 10%;
 }
 
-/*Цвет названия сайта, при поднесении к нему курсора мышки или при его нахождении в фокусе*/
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: black;
+/*Элемент меню, при поднесении к нему курсора мышки или при его нахождении в фокусе*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+    color: beige;
 }
 
-/*Цвет элемента меню, при поднесении к нему курсора мышки или при его нахождении в фокусе*/
-.navbar-default .navbar-nav > li:hover,
-navbar-default .navbar-nav > li > a:focus{
-    color: white;
-}
-
-/*Цвет элементов меню */
+/*Элемент меню */
 .navbar-default .navbar-nav > li > a {
     color: white;
 }
 
-/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки
+/*Активный пункт меню, а также поднесении к нему курсора мышки
 или при его нахождении в фокусе */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #d1ffed;
-    background-color: #7448A0;
+    color: beige;
+    background-color: #521A89;
+    text-decoration: underline;
 }
 
+.navbar-default .container-fluid > h2{
+    font-family: 'Chiller', sans-serif;
+    font-size: 48px;
+    color: white;
+}
+.content{
+    margin-top: 300px;
+}
+
+.content .row{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content .card-body{
+    margin: 20px;
+}
+
+.content .row{
+    margin-left: 100px;
+}
+
+.card-body > img{
+    border: #9c9eaf 1px solid;
+    border-radius: 20px;
+    padding: 50px;
+}
+.product-button{
+    margin-top: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: #9c9eaf 1px solid;
+    border-radius: 50px;
+}
+
+.product-button:hover, .product-button:focus{
+    background-color: black;
+    border: black 1px solid;
+    color: white;
+    transition: 0.8s;
+}
+
+.card-body > a{
+    text-decoration: none;
+    color: black;
+}
+
+.payment-img{
+    margin: 5px;
+}
+
+.social-img{
+    margin: 5px;
+    width: 42px;
+}
 /*Цвет текста и фона нижнего блока footer*/
 .page-footer{
     background-color: #521A89;
@@ -47,8 +151,6 @@ navbar-default .navbar-nav > li > a:focus{
 /*Цвеи верхнего блка footer*/
 .page-footer .row{
     background-color: #7448A0;
-    margin-right: -30px;
-    margin-left: -30px;
 }
 
 /*Цвет ссылко верхнего блока footer*/
@@ -59,4 +161,10 @@ navbar-default .navbar-nav > li > a:focus{
 /*Цвет ссылко нижнего блока footer*/
 .footer-copyright > a{
     color: white;
+}
+
+footer{
+    margin-top: 100px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
