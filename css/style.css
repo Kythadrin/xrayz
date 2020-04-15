@@ -7,6 +7,8 @@ body{
 
 .centered{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav{
@@ -47,10 +49,10 @@ nav{
 
 .logo{
     width: 80px;
+    transition: 0.8s;
 }
 
 .logo:hover, .logo:focus{
-    transition: 0.8s;
     filter: hue-rotate(90deg);
     transform: scale(1.1);
 }
@@ -62,9 +64,10 @@ nav{
 }
 
 .navbar-default .navbar-nav > li{
+    display: block;
     margin-top: 5%;
-    border: 1px transparent solid;
     border-radius: 15px;
+    transition: all 500ms;
 }
 
 .navbar-default .container-fluid > h2{
@@ -74,9 +77,7 @@ nav{
 /*Элемент меню, при поднесении к нему курсора мышки или при его нахождении в фокусе*/
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus{
-    transition: all 500ms;
     color: red;
-    border: 1px deeppink solid;
     border-radius: 15px;
 }
 
@@ -118,6 +119,11 @@ nav{
     background-color: darkgreen;
 }
 
+.getStarted-button > a{
+    color: black;
+    text-decoration: none;
+}
+
 .content .product{
     margin-top: 40px;
 }
@@ -141,13 +147,13 @@ nav{
     background-color: white;
     border: #9c9eaf 1px solid;
     border-radius: 50px;
+    transition: 0.8s;
 }
 
 .product-button:hover, .product-button:focus{
     background-color: black;
     border: black 1px solid;
     color: white;
-    transition: 0.8s;
 }
 
 .product > a{
@@ -162,6 +168,42 @@ nav{
 .social-img{
     margin: 5px;
     width: 42px;
+}
+
+.login-logo{
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form{
+    padding: 50px;
+    width: 330px;
+    border: 2px deeppink solid;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 239px;
+}
+
+.login-form > label{
+    margin-top: 30px;
+}
+
+.fg-pass{
+    font-size: 10px;
+    text-decoration: none;
+
+}
+
+#login-button{
+    background-color: #28a745;
+    border: none;
+    height: 50px;
+    width: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
 /*Цвет текста и фона нижнего блока footer*/
