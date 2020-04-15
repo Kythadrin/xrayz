@@ -11,7 +11,7 @@ body{
     margin-right: auto;
 }
 
-nav{
+.navbar-default{
     box-shadow: inset 0 0 50px 1px black;
 }
 
@@ -42,7 +42,6 @@ nav{
     background-size: 100%;
     background-position-y: -250px;
     height: 660px;
-    opacity: 0.9;
     margin-top: -20px;
     box-shadow: inset 0 -93px 54px -29px rgba(255,255,255,1);
 }
@@ -74,20 +73,16 @@ nav{
     margin-left: 350px;
 }
 
-/*Элемент меню, при поднесении к нему курсора мышки или при его нахождении в фокусе*/
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus{
     color: red;
     border-radius: 15px;
 }
 
-/*Элемент меню */
 .navbar-default .navbar-nav > li > a {
     color: white;
 }
 
-/*Активный пункт меню, а также поднесении к нему курсора мышки
-или при его нахождении в фокусе */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -122,6 +117,16 @@ nav{
 .getStarted-button > a{
     color: black;
     text-decoration: none;
+}
+
+#news > h1{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+#news .card{
+    margin-bottom: 100px;
 }
 
 .content .product{
@@ -206,22 +211,19 @@ nav{
     border-radius: 20px;
 }
 
-/*Цвет текста и фона нижнего блока footer*/
 .page-footer{
     background-color: #521A89;
     color: white;
 }
 
-/*Цвеи верхнего блка footer*/
 .page-footer .row{
-    background-color: #7448A0;
+    background-color: #7842CB;
 }
 
 .page-footer .container-fluid .row .col-md-3 > a{
     color: white;
 }
 
-/*Цвет ссылко нижнего блока footer*/
 .footer-copyright > a{
     color: white;
 }
