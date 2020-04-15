@@ -43,9 +43,10 @@
         <div class="form-group">
             <input type="text" class="form-control" size="96px" placeholder="Search">
         </div>
-    </form
+        <a href="#content"><div class="getStarted-button">Get started</div></a>
+    </form>
 </div>
-<div class="container-fluid content">
+<div class="container-fluid content centered" id="content">
     <div class="row category">
         <h1>Sneakers</h1>
     </div>
@@ -109,5 +110,15 @@
         <a href="#"> </a>
     </div>
 </footer>
+
+<script>
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+    });
+</script>
 </body>
 </html>

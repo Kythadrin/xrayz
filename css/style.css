@@ -9,6 +9,10 @@ body{
     text-align: center;
 }
 
+nav{
+    box-shadow: inset 0 0 50px 1px black;
+}
+
 .header-text{
     margin-top: -3.5%;
 }
@@ -38,6 +42,7 @@ body{
     height: 660px;
     opacity: 0.9;
     margin-top: -20px;
+    box-shadow: inset 0 -93px 54px -29px rgba(255,255,255,1);
 }
 
 .logo{
@@ -45,11 +50,10 @@ body{
 }
 
 .logo:hover, .logo:focus{
-    transition: all 0.8s;
+    transition: 0.8s;
     filter: hue-rotate(90deg);
     transform: scale(1.1);
 }
-
 
 .navbar-default{
     background: #521A89;
@@ -59,6 +63,8 @@ body{
 
 .navbar-default .navbar-nav > li{
     margin-top: 5%;
+    border: 1px transparent solid;
+    border-radius: 15px;
 }
 
 .navbar-default .container-fluid > h2{
@@ -68,7 +74,10 @@ body{
 /*Элемент меню, при поднесении к нему курсора мышки или при его нахождении в фокусе*/
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus{
-    color: beige;
+    transition: all 500ms;
+    color: red;
+    border: 1px deeppink solid;
+    border-radius: 15px;
 }
 
 /*Элемент меню */
@@ -81,8 +90,8 @@ body{
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: beige;
-    background-color: #521A89;
+    color: red;
+    background-color: transparent;
     text-decoration: underline;
 }
 
@@ -92,14 +101,31 @@ body{
     color: white;
 }
 
-.content{
-    margin-top: 300px;
+.getStarted-button{
+    background-color: forestgreen;
+    width: 200px;
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.getStarted-button:hover, .getStarted-button:focus{
+    text-decoration: none;
+    background-color: darkgreen;
 }
 
 .content .product{
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
+.category > h1{
+    font-weight: 800;
+    font-size: 64px;
+}
 
 .product > img{
     border: #9c9eaf 1px solid;
@@ -137,6 +163,7 @@ body{
     margin: 5px;
     width: 42px;
 }
+
 /*Цвет текста и фона нижнего блока footer*/
 .page-footer{
     background-color: #521A89;
@@ -151,6 +178,7 @@ body{
 .page-footer .container-fluid .row .col-md-3 > a{
     color: white;
 }
+
 /*Цвет ссылко нижнего блока footer*/
 .footer-copyright > a{
     color: white;
@@ -158,6 +186,4 @@ body{
 
 footer{
     margin-top: 100px;
-    margin-left: -15px;
-    margin-right: -15px;
 }
