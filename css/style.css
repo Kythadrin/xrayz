@@ -19,6 +19,7 @@ body{
     margin-top: -3.5%;
 }
 
+
 .banner-text{
     font-family: 'Chiller', sans-serif;
     font-size: 96px;
@@ -144,6 +145,17 @@ body{
     padding: 50px;
 }
 
+.price{
+    font-size: 46px;
+    font-weight: bold;
+    color: green;
+}
+
+.size{
+    font-size: 46px;
+    font-weight: bold;
+}
+
 .product-button{
     margin-top: 20px;
     width: 350px;
@@ -226,6 +238,10 @@ body{
 
 .footer-copyright > a{
     color: white;
+}
+
+.btn{
+    margin: 0 20px 0 20px;
 }
 
 footer{
