@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Product</title>
+    <title>My profile</title>
     <link rel="icon" href="icon.png">
 </head>
 <body>
@@ -30,7 +30,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="aboutUs.html">About us</a></li>
-                <li><a href="login.html">My profile</a></li>
+                <li  class="active"><a href="login.html">My profile</a></li>
                 <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
             </ul>
         </div>
@@ -39,34 +39,15 @@
 </nav>
 <!--End header-->
 
-<!--Product page-->
-<div class="container-fluid content">
-    <div class="col-lg-3" style="margin-left: 200px;">
-        <img src="img/jordan.jpg" width="400px" alt="Product image">
-    </div>
-    <div class="col-lg6" style="width: 1200px">
-        <h1 style="font-weight: bold">Product name</h1>
-        <h2>Description:</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolores eaque hic maiores perferendis
-            placeat quibusdam suscipit unde vel velit. Dignissimos doloremque earum inventore libero mollitia, nam quos
-            rem sit.</p>
-    </div>
-    <div class="row">
-        <div class="col-lg-2">
-            <h2>Price:</h2>
-            <p class="price">45.55$</p>
-        </div>
-        <div class="col-lg-1">
-            <h2>Size:</h2>
-            <p class="size">44</p>
-        </div>
-    </div>
-    <div class="row centered">
-        <buttom type="button" class="btn btn-lg btn-success">Buy</buttom>
-        <button type="button" class="btn btn-lg btn-primary">Add to cart</button>
-    </div>
+<!--Profile block-->
+<div class="container centered profile-menu content">
+    <img src="img/profile.png" class="profile-img" alt="Product image"><br>
+    <h2>Welcome, example@outlook.com!</h2>
+    <a href="orders.html"><button type="button" class="btn btn-lg btn-primary">My orders</button></a><br>
+    <a href="settings.html"><button type="button" class="btn btn-lg btn-default">Settings</button></a><br>
+    <a href="login.html"><button type="button" class="btn btn-lg btn-danger">Exit</button></a><br>
 </div>
-<!--End product page-->
+<!--End profile block-->
 
 <!--Footer-->
 <footer class="page-footer font-small pt-4">

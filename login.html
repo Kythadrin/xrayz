@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Log In</title>
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="icon.png">
 </head>
 <body>
 <!--Header-->
@@ -27,10 +27,10 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="aboutUs.html">About us</a></li>
-                <li><a href="login.html">My profile</a></li>
+                <li  class="active"><a href="login.html">My profile</a></li>
                 <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
             </ul>
         </div>
@@ -39,19 +39,20 @@
 </nav>
 <!--End header-->
 
-<!--Logn form block-->
-<div class="centered"><img src="img/logo.png" alt="logo" class="login-logo"></div>
-<div class="login-form">
-    <h1 class="text-uppercase centered">Log In</h1>
-    <div class="centered"><i class="material-icons">account_circle</i></div>
-    <form class="">
-        <label for="textbox-email">Email:</label><br>
-        <input type="email" size="30px" id="textbox-email"><br>
-        <label for="textbox-password">Password:</label><br>
-        <input type="password" size="30px" id="textbox-password"><br>
-        <a href="#" class="fg-pass">Forgot password?</a><br><a href="#" class="fg-pass">Haven't account?</a><br>
-        <div class="centered"><input type="button" size="300px" id="login-button" value="Log In"></div>
-    </form>
+<!--Login form block-->
+<div class="content">
+    <div class="centered"><img src="img/logo.png" alt="logo" class="login-logo"></div>
+    <div class="login-form">
+        <h1 class="text-uppercase centered">Log In<i class="material-icons">account_circle</i></h1>
+        <form>
+            <label for="textbox-email">Email:</label><br>
+            <input type="email" size="30px" id="textbox-email"><br>
+            <label for="textbox-password">Password:</label><br>
+            <input type="password" size="30px" id="textbox-password"><br>
+            <a href="fgpassword.html" class="fg-pass">Forgot password?</a><br><a href="registration.html" class="fg-pass">Haven't account?</a><br>
+            <div class="centered"><input type="button" size="300px" id="login-button" value="Log In"></div>
+        </form>
+    </div>
 </div>
 <!--End login form block-->
 
