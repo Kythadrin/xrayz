@@ -25,7 +25,10 @@ h1{
 }
 
 .header-text{
-    margin-top: -3.5%;
+    margin-top: -60px;
+    font-family: 'Chiller', sans-serif;
+    font-size: 48px;
+    color: white;
 }
 
 .banner-text{
@@ -39,6 +42,12 @@ h1{
     margin-bottom: 10px;
     opacity: 0.8;
     border-radius: 10px;
+}
+
+.form-control{
+    width: 700px !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .banner .navbar-form{
@@ -73,7 +82,7 @@ h1{
 
 .navbar-default .navbar-nav > li{
      display: block;
-     margin-top: 3%;
+     margin-top: 4%;
      border-radius: 15px;
      font-size: 20px;
  }
@@ -98,12 +107,6 @@ h1{
     text-decoration: underline;
 }
 
-.navbar-default .container-fluid > h2{
-    font-family: 'Chiller', sans-serif;
-    font-size: 48px;
-    color: white;
-}
-
 .getStarted-button{
     background-color: #59b123;
     width: 200px;
@@ -112,7 +115,7 @@ h1{
     font-size: 32px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 5%;
     border-radius: 20px;
     transition: 0.4s;
 }
@@ -174,7 +177,7 @@ h1{
     color: black;
 }
 
-.cart .col-lg-3{
+.cart .col-md-4{
     margin-bottom: 20px;
 }
 
@@ -263,6 +266,12 @@ h1{
     width: 450px;
 }
 
+#news .card{
+    width: 900px;
+    border: 2px deeppink solid;
+    padding: 0 70px 0 70px;
+}
+
 .page-footer{
     background-color: #521A89;
     color: white;
@@ -297,63 +306,247 @@ footer{
     margin-top: 100px;
 }
 
-/*@media (max-width: 575.98px){*/
-
-/*}*/
-
-/*@media (max-width: 767.98px){*/
-
-/*}*/
-
-/*@media (max-width: 991.98px){*/
-/*    .navbar-default .navbar-nav > li{*/
-/*        font-size: 14px;*/
-/*    }*/
-
-/*    .header-text{*/
-/*        font-size: 10px;*/
-/*    }*/
-/*}*/
-
-@media (max-width: 1199.98px){
-    .navbar-default .navbar-nav > li{
-        font-size: 16px;
-    }
-
-    .navbar-default h2{
-        margin-top: -6%;
-    }
-
-    .navbar-default .navbar-nav > li{
-        margin-top: 5%;
-    }
-
+@media (max-width: 1650px){
     .banner{
-        background-position-y: -200px;
-        height: 500px;
+        background-position-y: -100px;
+    }
+
+    .navbar-default .navbar-nav > li{
+        margin-top: 6%;
+    }
+}
+
+@media (max-width: 1330px){
+    .banner {
+        background-position-y: -50px;
+        height: 580px;
+    }
+}
+
+@media (max-width: 1132px){
+    .banner{
+        height: 460px;
     }
 
     .banner-text{
-        margin-top: 600px;
+        font-size: 80px;
+    }
+    .header-text{
+        margin-top: -50px;
+        font-size: 42px;
+    }
+    .navbar-default .navbar-nav > li{
+        font-size: 16px;
+        margin-top: 5.5%;
+    }
+}
+
+@media (max-width: 1004px){
+    .header-text{
+        font-size: 34px;
+    }
+
+    #news  .card{
+        width: 700px;
+    }
+}
+
+@media (max-width: 888px){
+    .banner{
+        height: 350px;
+    }
+
+    .banner-text{
+        font-size: 50px;
+    }
+
+    .content > h1{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .cart .row .col-md-4 > img{
+        width: 250px;
+    }
+}
+
+@media (max-width: 766px){
+    .navbar-default .collapse .navbar-nav > li{
+        text-align: center;
+        margin-top: 0;
+
+    }
+
+    .navbar-default .collapse .navbar-nav{
+        margin-bottom: 50px;
+    }
+
+    #news  .card{
+        width: 600px;
+    }
+
+    #news .card > img{
+        width: 150px;
+    }
+
+    #news .card .card-body > h2{
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 722px){
+    .banner{
+        height: 300px;
+    }
+
+    .banner-text{
+        width: 400px;
     }
 
     .getStarted-button{
-        margin-top: 40px;
+        font-size: 25px;
+    }
+
+    .form-control{
+        width: 400px !important;
+    }
+
+    #news .card{
+        width: 470px;
+        padding: 10px;
     }
 }
 
-@media (max-width: 1599px){
+@media (max-width: 598px){
     .banner{
-        background-position-y: -200px;
-        height: 400px;
-        margin-bottom: 40px;
+        height: 200px;
     }
 
     .banner-text{
-        margin-top: -100px;
+        margin-top: -50px;
     }
 
-    .banner .getStarted-button{
-       margin-top: 20px;
+    .header-text{
+        margin-top: -40px;
+        font-size: 28px;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+    .getStarted-button{
+        display: none;
     }
 }
+
+@media (max-width: 502px){
+    #news  .card{
+        width: 400px;
+    }
+
+    .content .address form input{
+        width: 350px;
+    }
+}
+
+@media (max-width: 460px){
+    .header-text{
+        font-size: 24px;
+    }
+
+    .banner-text{
+        margin-top: -30px;
+        width: 200px;
+        font-size: 40px;
+    }
+
+    .category > h1{
+        margin-top: 100px;
+    }
+
+    .form-control{
+        width: 200px !important;
+    }
+
+    .product > img{
+        width: 250px;
+    }
+
+    .product-button{
+        width: 200px;
+    }
+}
+
+@media (max-width: 420px){
+    .banner{
+        height: 150px;
+    }
+
+    .header-text{
+        margin-top: -30px;
+        font-size: 20px;
+    }
+
+    #news .card{
+        width: 320px;
+    }
+
+    #news .card > img{
+        width: 120px;
+    }
+
+    #news .card .card-body > p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 368px){
+    .banner{
+        height: 130px;
+    }
+
+    .header-text{
+        margin-top: -35px;
+    }
+
+    .logo{
+        width: 40px;
+    }
+
+    .header-text{
+        font-size: 16px;
+    }
+
+    #news .card{
+        width: 290px;
+    }
+
+    .login-form{
+        width: 300px;
+    }
+
+    .login-form > h1{
+        font-size: 50px;
+    }
+
+    .cart .col-md-4{
+        margin-left: -7px;
+    }
+
+    .cart .btn {
+        width: 280px;
+        margin-left: 7px;
+        font-size: 45px;
+        padding: 10px;
+    }
+
+    .content .address form input{
+        width: 260px;
+    }
+}
+
+
+
+
