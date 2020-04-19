@@ -121,7 +121,7 @@ h1{
     margin-right: auto;
     margin-top: 5%;
     border-radius: 20px;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 .getStarted-button:hover{
@@ -148,11 +148,27 @@ h1{
     padding: 50px;
 }
 
+.cart img{
+    width: 300px;
+}
+
+.cart .remove-button{
+    width: 50px;
+}
+
 .img-wrap{
     position: relative;
-    width: 400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.product .img-wrap{
+    width: 400px;
+}
+
+.cart .img-wrap{
+    width: 300px;
+
 }
 
 .img-wrap p{
@@ -167,6 +183,19 @@ h1{
     border-right: 1px #9c9eaf solid;
     top: 1px;
     left: 1px;
+}
+
+.remove-button{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 50px;
+    transition: 1s;
+}
+
+.remove-button:hover{
+    filter: hue-rotate(100deg);
+    transform: scale(1.1);
 }
 
 .price{
@@ -288,6 +317,13 @@ h1{
     width: 450px;
 }
 
+.category-line{
+    color: #9c9eaf;
+    background-color: #9c9eaf;
+    height: 1px;
+    width: 45%;
+}
+
 #news .card{
     width: 900px;
     border: 2px deeppink solid;
@@ -362,13 +398,19 @@ footer{
     .banner-text{
         font-size: 80px;
     }
+
     .header-text{
         margin-top: -50px;
         font-size: 42px;
     }
+
     .navbar-default .navbar-nav > li{
         font-size: 16px;
         margin-top: 5.5%;
+    }
+
+    .product-page .row{
+        text-align: center;
     }
 }
 
@@ -396,8 +438,16 @@ footer{
         margin-top: 50px;
     }
 
-    .cart .row .col-md-4 > img{
+    .cart img{
         width: 250px;
+    }
+
+    .cart .img-wrap{
+        width: 250px;
+    }
+
+    .cart .remove-button{
+       width: 50px;
     }
 }
 
@@ -405,7 +455,6 @@ footer{
     .navbar-default .collapse .navbar-nav > li{
         text-align: center;
         margin-top: 0;
-
     }
 
     .navbar-default .collapse .navbar-nav{
@@ -423,6 +472,15 @@ footer{
     #news .card .card-body > h2{
         font-size: 24px;
     }
+
+    .product-page .col-sm-6{
+        text-align: center;
+    }
+
+    .product-page .col-sm-2{
+        text-align: center;
+    }
+
 
 }
 
@@ -546,6 +604,18 @@ footer{
 
     #news .card .card-body > p{
         font-size: 12px;
+    }
+
+    .product-page img{
+        width: 200px;
+    }
+
+    .product-page h1{
+        font-size: 40px;
+    }
+
+    .product-page h2{
+        font-size: 20x;
     }
 }
 
