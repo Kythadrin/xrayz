@@ -112,6 +112,10 @@ h1{
     background-color: #521A89 !important;
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+}
+
 .getStarted-button{
     background-color: #59b123;
     width: 200px;
