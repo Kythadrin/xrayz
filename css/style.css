@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
-@font-face {
-    font-family: Chiller;
-    src: url('../fonts/chiller.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 body{
     background-color: white;
@@ -30,14 +27,16 @@ h1{
 
 .header-text{
     margin-top: -60px;
-    font-family: 'Chiller', sans-serif;
-    font-size: 48px;
+    /*font-family: 'Chiller', sans-serif;*/
+    font-family: 'Caveat', cursive;
+    font-size: 42px;
     color: white;
 }
 
 .banner-text{
-    font-family: 'Chiller', sans-serif;
-    font-size: 96px;
+    /*font-family: 'Chiller', sans-serif;*/
+    font-family: 'Caveat', cursive;
+    font-size: 92px;
     color: white;
     background-color: black;
     width: 700px;
