@@ -168,7 +168,6 @@ h1{
 
 .cart .img-wrap{
     width: 300px;
-
 }
 
 .img-wrap p{
@@ -285,7 +284,7 @@ h1{
 }
 
 .fg-pass{
-    font-size: 10px;
+    font-size: 11px;
     text-decoration: none;
 }
 
@@ -574,11 +573,12 @@ footer{
         font-size: 14px;
     }
 
-    .img-wrap{
+    .product .img-wrap{
         width: 250px;
+
     }
 
-    .img-wrap p{
+    .product .img-wrap p{
         font-size: 20px;
         min-width: 90px;
     }
