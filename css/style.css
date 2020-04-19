@@ -335,15 +335,15 @@ h1{
     color: white;
 }
 
+.page-footer a{
+    color: white;
+}
+
 .page-footer .row{
     background-color: #7842CB;
 }
 
 .page-footer .container-fluid .row .col-md-3 > a{
-    color: white;
-}
-
-.footer-copyright > a{
     color: white;
 }
 
