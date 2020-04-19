@@ -3,8 +3,9 @@
 
 @font-face{
     font-family: Chiller;
-    src: url("../fonts/CHILLER.TTF");
+    src: url("../fonts/chiller.ttf");
 }
+
 body{
     background-color: white;
     font-family: 'Comic Neue', cursive;
