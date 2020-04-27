@@ -3,7 +3,14 @@
 
 body{
     background-color: white;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue', cursive !important;
+    margin-bottom: 200px;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 h1{
@@ -17,19 +24,63 @@ h1{
     margin-right: auto;
 }
 
-.content{
-    min-height: 615px;
-}
-
-.navbar-default{
-    box-shadow: inset 0 0 50px 1px black;
-}
-
 .header-text{
     margin-top: -60px;
     font-family: 'Caveat', cursive;
     font-size: 42px;
     color: white;
+}
+
+.stores{
+    position: absolute;
+    bottom: 100px;
+    right: 270px;
+}
+
+.stores li{
+    margin-left: 20px;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.arrow{
+    position: absolute;
+    bottom: -750px;
+    left: 50%;
+    transition: 0.7s;
+}
+
+.arrow:hover{
+    transform: scale(1.2);
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    width: 75%;
 }
 
 .banner-text{
@@ -51,45 +102,51 @@ h1{
     margin-right: auto;
 }
 
-.banner .navbar-form{
-    margin-top: 10%;
-}
-
-.banner{
-    background-image: url("../img/header.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: -250px;
-    height: 660px;
-    margin-top: -20px;
-    box-shadow: inset 0 -93px 54px -29px rgba(255,255,255,1);
-}
-
 .logo{
-    width: 80px;
+    width: 120px;
     transition: 0.8s;
 }
 
 .logo:hover, .logo:focus{
-    filter: hue-rotate(100deg);
+    filter: hue-rotate(90deg);
     transform: scale(1.1);
 }
 
 .navbar-default{
-    background: #521A89;
+    background: transparent;
     border: 0;
     border-radius: 0;
 }
 
+.stores .navbar-nav li{
+    z-index: 1;
+}
+
+.stores .navbar-nav li > a{
+    transition: 0.5s;
+}
+
+.stores .navbar-nav > li a:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
 .navbar-default .navbar-nav > li{
-     display: block;
-     margin-top: 4%;
-     border-radius: 15px;
-     font-size: 20px;
+    display: block;
+    margin-top: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 1px white solid;
+    margin-left: 20px;
+    transition: 0.5s;
  }
 
 .navbar-default .navbar-nav > li > a{
     transition: 0.5s;
+}
+
+.navbar-default .navbar-nav > li:hover{
+    border-color: red;
 }
 
 .navbar-default .navbar-nav > li > a:hover{
@@ -106,14 +163,7 @@ h1{
     color: red;
     background-color: transparent;
     text-decoration: underline;
-}
-
-.navbar-toggle:focus, .navbar-toggle:hover{
-    background-color: #521A89 !important;
-}
-
-.navbar-default .navbar-toggle .icon-bar{
-    background-color: white;
+    border-color: red;
 }
 
 .getStarted-button{
@@ -139,8 +189,50 @@ h1{
     text-decoration: none;
 }
 
+.news-content{
+    display: flex;
+    margin-top: 50px;
+}
+
+#news{
+    min-height: 100vh;
+}
+
 #news .card{
-    margin-bottom: 100px;
+    width: 400px;
+    border: 2px lightgrey solid;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+    box-shadow: 0 19px 40px 8px rgba(0,0,0,0.5);
+}
+
+#news .card img{
+    width: 100px;
+}
+
+.card{
+    position: relative;
+}
+
+.card-body .text-right{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+#card_1{
+    height: 700px;
+    width: 600px !important;
+    font-size: 18px;
+}
+
+#card_1 h2{
+    font-size: 52px;
+}
+
+#card_2, #card_3{
+    height: 450px;
+    margin-top: 200px;
 }
 
 .content .product{
@@ -321,19 +413,6 @@ h1{
     width: 450px;
 }
 
-.category-line{
-    color: #9c9eaf;
-    background-color: #9c9eaf;
-    height: 1px;
-    width: 45%;
-}
-
-#news .card{
-    width: 900px;
-    border: 2px deeppink solid;
-    padding: 0 70px 0 70px;
-}
-
 .page-footer{
     background-color: #521A89;
     color: white;
@@ -353,6 +432,7 @@ h1{
 
 .btn{
     margin: 0 20px 0 20px;
+    transition: 0.5s;
 }
 
 .thead-main{
@@ -360,19 +440,29 @@ h1{
     color: white;
 }
 
-.btn{
-    transition: 0.5s;
+.cart-link{
+    position: fixed;
+    bottom: 50px;
+    right: -15px;
+    z-index: 999;
+}
+
+.cart-link img{
+    width: 150px;
+    transition: 1s;
+}
+
+.cart-link img:hover{
+    transform: scale(1.1);
 }
 
 footer{
-    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 1650px){
-    .banner{
-        background-position-y: -100px;
-    }
-
     .navbar-default .navbar-nav > li{
         margin-top: 6%;
     }
@@ -380,11 +470,6 @@ footer{
 }
 
 @media (max-width: 1330px){
-    .banner {
-        background-position-y: -50px;
-        height: 580px;
-    }
-
     .product > img{
         width: 320px;
     }
@@ -400,10 +485,6 @@ footer{
 }
 
 @media (max-width: 1132px){
-    .banner{
-        height: 460px;
-    }
-
     .banner-text{
         font-size: 80px;
     }
@@ -434,10 +515,6 @@ footer{
 }
 
 @media (max-width: 888px){
-    .banner{
-        height: 350px;
-    }
-
     .banner-text{
         font-size: 50px;
     }
@@ -504,10 +581,6 @@ footer{
 }
 
 @media (max-width: 722px){
-    .banner{
-        height: 300px;
-    }
-
     .banner-text{
         width: 400px;
     }
@@ -527,10 +600,6 @@ footer{
 }
 
 @media (max-width: 598px){
-    .banner{
-        height: 200px;
-    }
-
     .banner-text{
         margin-top: -50px;
     }
@@ -609,10 +678,6 @@ footer{
 }
 
 @media (max-width: 420px){
-    .banner{
-        height: 150px;
-    }
-
     .header-text{
         margin-top: -35px;
         font-size: 20px;
@@ -644,10 +709,6 @@ footer{
 }
 
 @media (max-width: 368px){
-    .banner{
-        height: 130px;
-    }
-
     .header-text{
         margin-top: -35px;
     }
@@ -686,6 +747,11 @@ footer{
     }
 }
 
-
-
-
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}

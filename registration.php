@@ -29,8 +29,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
-                <li class="active"><a href="aboutUs.html">About us</a></li>
-                <li><a href="login.html">My profile</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li class="active"><a href="login.html">My profile</a></li>
                 <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
             </ul>
         </div>

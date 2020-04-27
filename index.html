@@ -8,104 +8,219 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/slider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Home page</title>
     <link rel="icon" href="icon.png">
 </head>
 <body>
-<!--Header-->
-<nav class="navbar navbar-default fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="" href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="aboutUs.html">About us</a></li>
-                <li><a href="login.html">My profile</a></li>
-                <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
-            </ul>
-        </div>
-        <h2 class="text-center header-text text-uppercase">First Latvian sneaker store!</h2>
-    </div>
-</nav>
+
+<!--<nav class="navbar navbar-default fixed-top">-->
+<!--    <div class="container-fluid">-->
+<!--        <div class="navbar-header">-->
+<!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--            </button>-->
+<!--            -->
+<!--        </div>-->
+<!--        <div class="navbar-collapse collapse">-->
+<!--            <ul class="nav navbar-nav navbar-right">-->
+<!--                <li class="active"><a href="#">Home</a></li>-->
+<!--                <li><a href="news.html">News</a></li>-->
+<!--                <li><a href="aboutUs.html">About us</a></li>-->
+<!--                <li><a href="login.html">My profile</a></li>-->
+<!--                <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <h2 class="text-center header-text text-uppercase">First Latvian sneaker store!</h2>-->
+<!--    </div>-->
+<!--</nav>-->
 <!--End header-->
 
 <!--Content-->
-<div class="container-fluid banner centered">
-    <form class="navbar-form" action="/action_page.php">
-        <div class="banner-text">Search & Buy</div>
-        <div class="form-group">
-            <label>
-                <input type="text" class="form-control" size="96px" placeholder="Search">
-            </label>
+<!--<div class="container-fluid banner centered">-->
+<!--    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">-->
+<!--        <source src="video/bg.mp4" type="video/mp4">-->
+<!--    </video>-->
+
+<!--</div>-->
+
+<!--Header-->
+<header>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="video/bg.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="container-fluid navbar-default">
+            <a class="" href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">My Profile</a></li>
+                <li><a href="registration.php">Create account</a></li>
+            </ul>
         </div>
-        <a href="#content"><div class="getStarted-button">Get started</div></a>
-    </form>
-</div>
-<div class="container-fluid content centered" id="content">
-    <h1>Sneakers</h1>
-    <hr class="category-line">
-    <div class="row">
-        <div class="col-lg-4 col-md-6 product">
-            <div class="img-wrap">
-                <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
-                300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
-                <p class="card-text">35$</p>
-                <a href="product.html"><div class="product-button text-uppercase">adidas Yeezy Boost 350 V2 Zebra</div></a>
+        <a href="#shoes"><img src="img/down.png" alt="arrow" class="arrow"></a>
+    </div>
+    <div class="container-fluid stores">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><img src="img/google.png" alt="playmarket"></a></li>
+            <li><a href="#"><img src="img/app.png" alt="appstore"></a></li>
+        </ul>
+    </div>
+</header>
+<!--End header-->
+
+<!--Content-->
+<div class="container-fluid content centered">
+    <div class="row" id="news">
+        <h1>News</h1>
+        <div class="news-content">
+            <div class="card centered card_2" id="card_2">
+                <div class="card-body">
+                    <h2 class="card-title">News title</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, animi
+                        delectus, dicta dolore error esse fugiat id impedit, iusto odit perspiciatis provident quae sit!
+                        Architecto dolor excepturi quasi voluptates! Atque! Adipisci error perferendis placeat quaerat quis
+                        recusandae sequi sit totam ullam velit. Dolor ex maiores quis. Ab corporis ea earum excepturi in
+                        incidunt nisi officiis porro quam saepe, sapiente, sed?</p>
+                    <a href="news.html"><p class="text-center">Read more</p></a>
+                    <p class="text-right">15.04.2020</p>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6 product">
-            <div class="img-wrap">
-                <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
-                300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
-                <p class="card-text">35$</p>
-                <a href="product.html"><div class="product-button text-uppercase">adidas Yeezy Boost 350 V2 Zebra</div></a>
+            <div class="card centered card_1" id="card_1">
+                <div class="card-body">
+                    <h2 class="card-title">News title</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, animi
+                        delectus, dicta dolore error esse fugiat id impedit, iusto odit perspiciatis provident quae sit!
+                        Architecto dolor excepturi quasi voluptates! Atque! Adipisci error perferendis placeat quaerat quis
+                        recusandae sequi sit totam ullam velit. Dolor ex maiores quis. Ab corporis ea earum excepturi in
+                        incidunt nisi officiis porro quam saepe, sapiente, sed?</p>
+                    <a href="news.html"><p class="text-center">Read more</p></a>
+                    <p class="text-right">15.04.2020</p>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6 product">
-            <div class="img-wrap">
-                <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
-                300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
-                <p class="card-text">35$</p>
-                <a href="product.html"><div class="product-button text-uppercase">adidas Yeezy Boost 350 V2 Zebra</div></a>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 product">
-            <div class="img-wrap">
-                <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
-                300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
-                <p class="card-text">35$</p>
-                <a href="product.html"><div class="product-button text-uppercase">adidas Yeezy Boost 350 V2 Zebra</div></a>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 product">
-            <div class="img-wrap">
-                <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
-                300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
-                <p class="card-text">35$</p>
-                <a href="product.html"><div class="product-button text-uppercase">adidas Yeezy Boost 350 V2 Zebra</div></a>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 product">
-            <div class="img-wrap">
-                <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
-                300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
-                <p class="card-text">35$</p>
-                <a href="product.html"><div class="product-button text-uppercase">adidas Yeezy Boost 350 V2 Zebra</div></a>
+            <div class="card centered card_3" id="card_3">
+                <div class="card-body">
+                    <h2 class="card-title">News title</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, animi
+                        delectus, dicta dolore error esse fugiat id impedit, iusto odit perspiciatis provident quae sit!
+                        Architecto dolor excepturi quasi voluptates! Atque! Adipisci error perferendis placeat quaerat quis
+                        recusandae sequi sit totam ullam velit. Dolor ex maiores quis. Ab corporis ea earum excepturi in
+                        incidunt nisi officiis porro quam saepe, sapiente, sed?</p>
+                    <a href="news.html"><p class="text-center">Read more</p></a>
+                    <p class="text-right">15.04.2020</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <!--Slider-->
+    <div class="slider">
+        <!-- slides -->
+        <div class="slider__slides">
+            <div class="slide s--active">
+                <div class="slide__inner" style="background-image: url('img/nike.jpg')">
+                    <div class="slide__content">
+                        <h2 class="slide__heading">Clip-Path Revealing Slider</h2>
+                        <p class="slide__text">Greetings, Traveler!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__inner" style="background-image: url('img/dmp.jpg')">
+                    <div class="slide__content">
+                        <h2 class="slide__heading">Simple Animation</h2>
+                        <p class="slide__text">Clip-path magic!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide s--prev">
+                <div class="slide__inner" style="background-image: url('img/97.jpg')">
+                    <div class="slide__content">
+                        <h2 class="slide__heading">Very Stylish Effect!</h2>
+                        <p class="slide__text">It looks cool, isn't it?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slides end -->
+        <div class="slider__control">
+            <div class="slider__control-line"></div>
+            <div class="slider__control-line"></div>
+        </div>
+        <div class="slider__control slider__control--right m--right">
+            <div class="slider__control-line"></div>
+            <div class="slider__control-line"></div>
+        </div>
+    </div>
+    <script src="js/slider.js"></script>
+    <!--End slider-->
+
+    <!--Shoes-->
+    <div class="row" id="shoes">
+        <h1>Sneakers</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 product">
+                <div class="img-wrap">
+                    <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
+                    300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
+                    <p class="card-text">35$</p>
+                    <a href="product.html"><div class="product-button text-uppercase">Adidas Yeezy Boost 350 V2 Zebra</div></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product">
+                <div class="img-wrap">
+                    <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
+                    300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
+                    <p class="card-text">35$</p>
+                    <a href="product.html"><div class="product-button text-uppercase">Adidas Yeezy Boost 350 V2 Zebra</div></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product">
+                <div class="img-wrap">
+                    <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
+                    300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
+                    <p class="card-text">35$</p>
+                    <a href="product.html"><div class="product-button text-uppercase">Adidas Yeezy Boost 350 V2 Zebra</div></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product">
+                <div class="img-wrap">
+                    <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
+                    300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
+                    <p class="card-text">35$</p>
+                    <a href="product.html"><div class="product-button text-uppercase">Adidas Yeezy Boost 350 V2 Zebra</div></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product">
+                <div class="img-wrap">
+                    <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
+                    300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
+                    <p class="card-text">35$</p>
+                    <a href="product.html"><div class="product-button text-uppercase">Adidas Yeezy Boost 350 V2 Zebra</div></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product">
+                <div class="img-wrap">
+                    <img src="https://stockx.imgix.net/Air-Jordan-1-Retro-High-Court-Purple-White_01.jpg?fit=fill&bg=FFFFFF&w=
+                    300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585357778\" alt="product" width="400px">
+                    <p class="card-text">35$</p>
+                    <a href="product.html"><div class="product-button text-uppercase">Adidas Yeezy Boost 350 V2 Zebra</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End shoes-->
 </div>
 <!--End content-->
+
+<!--Cart-->
+<div class="cart-link">
+    <a href="cart.html"><img src="img/cart.png"></a>
+</div>
+<!--End cart-->
 
 <!--Footer-->
 <footer class="page-footer font-small pt-4">
@@ -141,7 +256,7 @@
 
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
-        }, 500, 'linear');
+        }, 1000, 'linear');
     });
 </script>
 <!--End "get started" button script-->
